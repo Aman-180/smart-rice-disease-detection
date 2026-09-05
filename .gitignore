@@ -1,0 +1,48 @@
+# Virtual environments
+venv/
+venv_gpu/
+env/
+*.venv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset and raw data
+dataset/
+dataset_yolo/
+data/raw/
+data/
+*.zip
+*.rar
+*.tar.gz
+
+# Model weights
+models/**/*.pth
+models/**/*.pt
+*.pth
+*.pt
+
+# YOLO/Roboflow
+runs/
+wandb/
+roboflow/
+*.cache
+
+# Logs
+logs/
+*.log
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
