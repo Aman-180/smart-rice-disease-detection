@@ -2,16 +2,35 @@
 venv/
 venv_gpu/
 env/
+ENV/
 *.venv
+.venv
 
-# Python cache
+# Python cache / compiled
 __pycache__/
+*.py[codz]
+*$py.class
 *.pyc
 *.pyo
 *.pyd
+.Python
 
-# Jupyter
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Jupyter / IPython
 .ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Dataset and raw data
 dataset/
@@ -39,6 +58,10 @@ logs/
 *.log
 outputs/
 
+# Env vars / secrets
+.env
+.envrc
+
 # OS
 .DS_Store
 Thumbs.db
@@ -46,3 +69,5 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+.ruff_cache/
+.mypy_cache/
